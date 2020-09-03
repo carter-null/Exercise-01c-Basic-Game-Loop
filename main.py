@@ -38,7 +38,6 @@ def get_input(current):
 def main():
     game_desc = load("adventure.json")
     current = find_passage(game_desc, game_desc["startnode"])
-    print(current["name"])
     choice = ""
 
     while choice != "quit" and current != {}:
